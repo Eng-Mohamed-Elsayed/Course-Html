@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form part 1</title>
+  </head>
+  <body>
+    <main>
+      <form>
+        <!-- username -->
+        <section>
+          <label>username</label>
+          <input
+            type="text"
+            placeholder="enter username"
+            name="user"
+            required
+            autofocus
+          />
+        </section>
+        <br />
+        <!-- email -->
+        <section>
+          <label>email</label>
+          <input
+            type="email"
+            placeholder="enter email"
+            name="email"
+            value="@gmail.com"
+            required
+          />
+        </section>
+        <br />
+        <!-- password -->
+        <section>
+          <label>password</label>
+          <input
+            type="password"
+            placeholder="enter password"
+            name="pass"
+            required
+            minlength="7"
+            maxlength="12"
+          />
+        </section>
+        <br />
+        <section>
+          <!-- HTML Non-Breaking Space (&nbsp;) -->
+          <label>Date of Birth</label>
+          <input type="date" name="DOB" required />
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <label>Favorite Month</label>
+          <input type="month" name="fMonth" required />
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <label>Birth Time</label>
+          <input type="time" name="birthTime" required />
+        </section>
+
+        <br />
+        <!-- button -->
+        <section>
+          <input type="submit" />
+          <input type="reset" />
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
