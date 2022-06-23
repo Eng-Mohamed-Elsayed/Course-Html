@@ -3,13 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form part 6</title>
+    <title>Form part 7</title>
   </head>
   <body>
     <main>
       <form>
+        <section>
+          <input type="hidden" name="role" value="admin" />
+        </section>
+
+        <section>
+          <label>UserId</label>
+          <input type="text" value="12345" name="id" disabled />
+        </section>
+        <br />
         <!-- username -->
-        <!-- <section>
+        <section>
           <label>username</label>
           <input
             type="text"
@@ -19,9 +28,9 @@
             autofocus
           />
         </section>
-        <br /> -->
+        <br />
         <!-- email -->
-        <!-- <section>
+        <section>
           <label>email</label>
           <input
             type="email"
@@ -31,9 +40,9 @@
             required
           />
         </section>
-        <br /> -->
+        <br />
         <!-- password -->
-        <!-- <section>
+        <section>
           <label>password</label>
           <input
             type="password"
@@ -44,10 +53,10 @@
             maxlength="12"
           />
         </section>
-        <br /> -->
-        <!-- <section> -->
-        <!-- HTML Non-Breaking Space (&nbsp;) -->
-        <!-- <label>Date of Birth</label>
+        <br />
+        <section>
+          <!-- HTML Non-Breaking Space (&nbsp;) -->
+          <label>Date of Birth</label>
           <input type="date" name="DOB" required />
           &nbsp;&nbsp;&nbsp;&nbsp;
           <label>Favorite Month</label>
@@ -56,8 +65,8 @@
           <label>Birth Time</label>
           <input type="time" name="birthTime" required />
         </section>
-        <br /> -->
-        <!-- <section>
+        <br />
+        <section>
           <input type="radio" name="gender" required />
           <label>Male</label>
           <input type="radio" name="gender" required />
@@ -84,8 +93,8 @@
           <input type="url" name="linkedIn" required />
           <br />
           <br />
-        </section> -->
-        <!-- <section>
+        </section>
+        <section>
           <h5>Selected Language learn</h5>
           <input type="checkbox" name="lang1" value="html" id="html" />
           <label for="html">HTML</label>
@@ -119,9 +128,9 @@
           <label>Year Experience</label>
           <input type="number" name="yearEx" min="1" max="50" step="2" />
         </section>
-        <br /> -->
+        <br />
 
-        <!-- <section>
+        <section>
           <label>Select a Field &nbsp; &nbsp;</label>
           <select name="field">
             <optgroup label="Mobile">
@@ -146,7 +155,7 @@
             <option value="Information Security">Information Security</option>
           </datalist>
         </section>
-        <br /> -->
+        <br />
         <section>
           <label for="cv">upload cv &nbsp; &nbsp;</label>
           <input type="file" name="cv" id="cv" />
@@ -164,6 +173,7 @@
         <section>
           <input type="submit" />
           <input type="reset" />
+          <button type="reset">Reset All</button>
         </section>
       </form>
     </main>
